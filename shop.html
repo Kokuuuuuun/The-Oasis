@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>The Oasis</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Amatic+SC:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+
+  <!-- Librerias css -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <!--css-->
+  <link href="assets/css/main2.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/addcart.css">
+</head>
+
+<body>
+  <!--headeer-->
+  <header id="principal" class="principal fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
+        <h1>The Oasis<span>.</span></h1>
+      </a>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="#ubicacion">Location</a></li>
+        </ul>
+        <div class="user">
+          <img src="assets/img/user.png" alt="Imagen de usuario" class="User">
+        </div>
+      </nav>
+    </div>
+    <div class="header-section containera">
+        <div>
+          <svg  onclick="showCart(this)"  class="cart w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+          </svg>
+          
+        <p class="count-product">0</p>
+      </div>
+      <div class="cart-products" id="products-id">
+        <p class="close-btn" onclick="closeBtn()">X</p>
+        <h3>carrito<h3>
+        <div class="card-items">
+          
+        </div>
+        <a href="checkout.html?nombre=&precio="  class="buy">Comprar</a>
+               <h2>Total: $<strong class="price-total">0</strong></h2>
+      </div>
+    </div>
+
+
+    <div class="dropdown">
+      <svg xmlns="http://www.w3.org/2000/svg" data-bs-toggle="dropdown" aria-expanded="false"
+        class="dropdown-toggle icon icon-tabler icon-tabler-menu-2" width="36" height="36" viewBox="0 0 24 24"
+        stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <path d="M4 6l16 0" />
+        <path d="M4 12l16 0" />
+        <path d="M4 18l16 0" />
+      </svg>
+      <ul class="dropdown-menu">
+        <li><button class="dropdown-item" type="button"> <a href="login.html" target="_blank"
+              rel="noopener noreferrer">Iniciar session</a></button></li>
+        <li><button class="dropdown-item" type="button"><a href="sign-up.html" target="_blank"
+              rel="noopener noreferrer">Registrarse</a></button></li>
+      </ul>
+    </div>
+  </header>
+  <!-- End Header -->
+  <!--Carrito-->
+
+  <!--end carrito-->
+  <!-- ======= Menu Section ======= -->
+  <section id="menu" class="menu">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-header">
+        <p>Nuestra<span>Tienda</span></p>
+      </div>
+
+      <ul class="nav nav-tabs d-flex justify-content-center" data-aos="fade-up" data-aos-delay="200">
+
+        <li class="nav-item">
+          <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#menu-starters">
+            <h4>alcohólicas</h4>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-breakfast">
+            <h4>Refrescos</h4>
+          </a>
+
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-lunch">
+            <h4>Jugos</h4>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-dinner">
+            <h4>Vinos</h4>
+          </a>
+        </li>
+
+      </ul>
+
+      <div class="tab-content" data-aos="fade-up" data-aos-delay="300">
+
+        <div class="tab-pane fade active show" id="menu-starters">
+
+
+          <div class="tab-header text-center">
+            <p>Categoria</p>
+            <h3>alcohólicas</h3>
+          </div>
+          <div class="products">
+        
+            <div class="col-lg-4 menu-item">
+              <img src="assets/img/shop/ce2.png" class="menu-img img-fluid" alt="">
+              <h4 class="title">corona</h4>
+              <p class="description1"> Una marca que te corona como un rey/reina</p>
+              <p class="price"><span>200</span>$</p>
+              <a href="#" class="btn-add-cart" data-id="1" >Agregar al carrito</a>
+              <a href="checkout.html?nombre=Corona&precio=200"  class="buy">Comprar</a>
+            </div>
+
+              <div class="col-lg-4 menu-item">
+                <img src="assets/img/shop/ce1.png" class="menu-img img-fluid" alt="">
+                <h4 class="title">Presidente</h4>
+                <p class="description1"> Una marca que te corona como un rey/reina</p>
+                <p class="price"><span>120</span>$</p>
+                <a href="#" class="btn-add-cart" data-id="2" >Agregar al carrito</a>
+                <a href="checkout.html?nombre=Presidente&precio=120"  class="buy">Comprar</a>
+              </div>
+
+            <div class="col-lg-4 menu-item">
+              <img src="assets/img/shop/ce3.png" class="menu-img img-fluid" alt="">
+              <h4 class="title">bohemia</h4>
+              <p class="description1"> solo disfruta </p>
+              <p class="price"><span>220</span>$</p>
+              <a href="#" class="btn-add-cart" data-id="3" >Agregar al carrito</a>
+              <a href="checkout.html?nombre=Bohemia&precio=220"  class="buy">Comprar</a>
+            </div>
+
+
+
+            <div class="col-lg-4 menu-item">
+              <img src="assets/img/shop/ce4lata.png" class="menu-img img-fluid" alt="">
+              <h4 class="title">corona en lata</h4>
+              <p class="description1">lo mismo pero en lata </p>
+              <p class="price"><span>100</span>$</p>
+              <a href="#" class="btn-add-cart" data-id="4">Agregar al
+                carrito</a>
+                <a href="checkout.html?nombre=Corona%20en%20lata&precio=100"  class="buy">Comprar</a>
+            </div>
+
+            <div class="col-lg-4 menu-item">
+              <img src="assets/img/shop/ce5.png" class="menu-img img-fluid" alt="">
+              <h4 class="title">Schofffff</h4>
+              <p class="description1"> Una bebida alemana pero exquisita </p>
+              <p class="price"><span>50</span>$</p>
+              <a href="#" class="btn-add-cart" data-id="5">Agregar al carrito</a>
+              <a href="checkout.html?nombre=Schofffff&precio=50" class="buy">Comprar</a>
+
+            </div>
+
+
+            <div class="col-lg-4 menu-item">
+              <img src="assets/img/shop/ce6.png" class="menu-img img-fluid" alt="">
+              <h4 class="title">Castellana</h4>
+              <p class="description1"> solo bebe esta delicia</p>
+              <p class="price"><span>100</span>$</p>
+              <a href="#" class="btn-add-cart" data-id="6">Agregar al carrito</a>
+              <a href="checkout.html?nombre=Castellana&precio=100"  class="buy" >Comprar</a>
+            </div>
+
+          </div>
+        </div>
+        <!-- Final Primera categoria -->
+
+        <div class="tab-pane fade" id="menu-breakfast">
+
+          <div class="tab-header text-center">
+            <p>Categoria</p>
+            <h3>Refrescos</h3>
+          </div>
+          
+          <div class="products-refrescos">
+            <div class="col-lg-4 menu-item">
+              <img src="assets/img/shop/coca cola.jpg" class="menu-img img-fluid" alt="">
+              <h4 class="title">Coca Cola</h4>
+              <p class="description1">Refresco de cola</p>
+              <p class="price"><span>200</span>$</p>
+              <a href="#" class="btn-add-cart" data-id="7">Agregar al carrito</a>
+              <button class="buy"><a href="checkout.html?nombre=Coca Cola&precio=200">Comprar</a></button>     
+            </div>
+
+
+            <div class="col-lg-4 menu-item">
+              <img src="assets/img/shop/fanta.jpg" class="menu-img img-fluid" alt="">
+              <h4 class="title">Fanta</h4>
+              <p class="description1">Refresco sabor naranja</p>
+              <p class="price"><span>300</span>$</p>
+              <a href="#" class="btn-add-cart" data-id="8" onclick="addToCart('Fanta', 300)">Agregar al carrito</a>
+              <a href="checkout.html?nombre=Fanta&precio=300" class="buy">Comprar</a>
+            </div>
+
+
+            <div class="col-lg-4 menu-item">
+              <img src="assets/img/shop/dr.png" class="menu-img img-fluid" alt="">
+              <h4 class="title">Dr. Pepper</h4>
+              <p class="description1">Refresco sabor cola</p>
+              <p class="price"><span>100</span>$</p>
+              <a href="#" class="btn-add-cart" data-id="9" onclick="addToCart('Dr. Pepper', 100)">Agregar al carrito</a>
+              <a href="checkout.html?nombre=Dr. Pepper&precio=100" class="buy">Comprar</a>
+            </div>
+
+            <div class="col-lg-4 menu-item">
+              <img src="assets/img/shop/spray.png" class="menu-img img-fluid" alt="">
+              <h4 class="title">Spray</h4>
+              <p class="description1">Refresco sabor manzana</p>
+              <p class="price"><span>130</span>$</p>
+              <a href="#" class="btn-add-cart" data-id="10" onclick="addToCart('Spray', 130)">Agregar al carrito</a>
+              <a href="checkout.html?nombre=Spray&precio=130" class="buy">Comprar</a>
+            </div>
+
+            <div class="col-lg-4 menu-item">
+              <img src="assets/img/shop/kolareal.png" class="menu-img img-fluid" alt="">
+              <h4 class="title">Kola Real</h4>
+              <p class="description1">Refresco sabor cola</p>
+              <p class="price"><span>200</span>$</p>
+              <a href="#" class="btn-add-cart" data-id="11" onclick="addToCart('Kola Real', 200)">Agregar al carrito</a>
+              <a href="checkout.html?nombre=Kola Real&precio=200" class="buy">Comprar</a>
+            </div>
+
+            <div class="col-lg-4 menu-item">
+              <img src="assets/img/shop/pepsi.jpg" class="menu-img img-fluid" alt="">
+              <h4 class="title">Pepsi</h4>
+              <p class="description1">Refresco sabor cola</p>
+              <p class="price"><span>400</span>$</p>
+              <a href="#" class="btn-add-cart" data-id="12" onclick="addToCart('Pepsi', 400)">Agregar al carrito</a>
+              <a href="checkout.html?nombre=Pepsi&precio=400" class="buy">Comprar</a>
+            </div>
+
+          </div>
+        </div>
+        <!-- Final Segunda categoria -->
+
+        <div class="tab-pane fade" id="menu-lunch">
+
+          <div class="tab-header text-center">
+            <p>Categoria</p>
+            <h3>Jugos</h3>
+          </div>
+
+          <div class="products-jugos">
+            <div class="col-lg-4 menu-item">
+              <img src="assets/img/shop/jugo1.jpg" class="menu-img img-fluid" alt="">
+              <h4 class="title">Petit</h4>
+              <p class="description1">Jugo de frutas pequeño</p>
+              <p class="price"><span>100</span>$</p>
+              <a href="#" class="btn-add-cart" data-id="13" onclick="addToCart('Petit', 100)">Agregar al carrito</a>
+              <a href="checkout.html?nombre=Petit&precio=100" class="buy">Comprar</a>
+            </div>
+
+            <div class="col-lg-4 menu-item">
+              <img src="assets/img/shop/jugo2.png" class="menu-img img-fluid" alt="">
+              <h4 class="title">Jumex</h4>
+              <p class="description1">Jugo de manzana</p>
+              <p class="price"><span>200</span>$</p>
+              <a href="#" class="btn-add-cart" data-id="14" onclick="addToCart('Jumex', 200)">Agregar al carrito</a>
+              <a href="checkout.html?nombre=Jumex&precio=200" class="buy">Comprar</a>
+            </div>
+
+            <div class="col-lg-4 menu-item">
+              <img src="assets/img/shop/jugo3.jpg" class="menu-img img-fluid" alt="">
+              <h4 class="title">Del Valle</h4>
+              <p class="description1">Jugo de naranja natural</p>
+              <p class="price"><span>100</span>$</p>
+              <a href="#" class="btn-add-cart" data-id="15" onclick="addToCart('Del Valle', 100)">Agregar al carrito</a>
+              <a href="checkout.html?nombre=Del Valle&precio=100" class="buy">Comprar</a>
+            </div>
+
+            <div class="col-lg-4 menu-item">
+              <img src="assets/img/shop/jugo4.png" class="menu-img img-fluid" alt="">
+              <h4 class="title">Delmonte</h4>
+              <p class="description1">Jugo de piña</p>
+              <p class="price"><span>140</span>$</p>
+              <a href="#" class="btn-add-cart" data-id="16" onclick="addToCart('Delmonte', 140)">Agregar al carrito</a>
+              <a href="checkout.html?nombre=Delmonte&precio=140" class="buy">Comprar</a>
+            </div>
+
+            <div class="col-lg-4 menu-item">
+              <img src="assets/img/shop/jugo5.jpg" class="menu-img img-fluid" alt="">
+              <h4 class="title">Bida</h4>
+              <p class="description1">Jugo de uva</p>
+              <p class="price"><span>130</span>$</p>
+              <a href="#" class="btn-add-cart" data-id="17" onclick="addToCart('Bida', 130)">Agregar al carrito</a>
+              <a href="checkout.html?nombre=Bida&precio=130" class="buy">Comprar</a>
+            </div>
+
+            <div class="col-lg-4 menu-item">
+              <img src="assets/img/shop/jugo6.jpg" class="menu-img img-fluid" alt="">
+              <h4 class="title">Rica</h4>
+              <p class="description1">Jugo de durazno</p>
+              <p class="price"><span>120</span>$</p>
+              <a href="#" class="btn-add-cart" data-id="18" onclick="addToCart('Rica', 120)">Agregar al carrito</a>
+              <a href="checkout.html?nombre=Rica&precio=120" class="buy">Comprar</a>
+            </div>
+          </div>
+        </div>
+        <!-- Final tercera categoria -->
+
+        <div class="tab-pane fade" id="menu-dinner">
+
+          <div class="tab-header text-center">
+            <p>Categoria</p>
+            <h3>Vinos</h3>
+          </div>
+
+          <div class="products-vinos">
+
+            <div class="col-lg-4 menu-item">
+              <img src="assets/img/shop/vino1.png" class="menu-img img-fluid" alt="">
+              <h4 class="title">Vino Mahoraga</h4>
+              <p class="description1">Vino tinto reserva</p>
+              <p class="price"><span>800</span>$</p>
+              <a href="#" class="btn-add-cart" data-id="19" onclick="addToCart('Vino Mahoraga', 800)">Agregar al
+                carrito</a>
+              <a href="checkout.html?nombre=Vino Mahoraga&precio=800" class="buy">Comprar</a>
+            </div>
+
+            <div class="col-lg-4 menu-item">
+              <img src="assets/img/shop/vino2.png" class="menu-img img-fluid" alt="">
+              <h4 class="title">Vino La Fuerza</h4>
+              <p class="description1">Vino blanco seco</p>
+              <p class="price"><span>350</span>$</p>
+              <a href="#" class="btn-add-cart" data-id="20" onclick="addToCart('Vino La Fuerza', 350)">Agregar al
+                carrito</a>
+              <a href="checkout.html?nombre=Vino La Fuerza&precio=350" class="buy">Comprar</a>
+            </div>
+
+            <div class="col-lg-4 menu-item">
+              <img src="assets/img/shop/vino3.png" class="menu-img img-fluid" alt="">
+              <h4 class="title">Carlo Rossi</h4>
+              <p class="description1">Vino rosado semi dulce</p>
+              <p class="price"><span>600</span>$</p>
+              <a href="#" class="btn-add-cart" data-id="21" onclick="addToCart('Carlo Rossi', 600)">Agregar al
+                carrito</a>
+              <a href="checkout.html?nombre=Carlo Rossi&precio=600" class="buy">Comprar</a>
+            </div>
+
+            <div class="col-lg-4 menu-item">
+              <img src="assets/img/shop/vino4.png" class="menu-img img-fluid" alt="">
+              <h4 class="title">Paradigma</h4>
+              <p class="description1">Vino espumoso brut</p>
+              <p class="price"><span>400</span>$</p>
+              <a href="#" class="btn-add-cart" data-id="22" onclick="addToCart('Paradigma', 400)">Agregar al carrito</a>
+              <a href="checkout.html?nombre=Paradigma&precio=400" class="buy">Comprar</a>
+            </div>
+
+            <div class="col-lg-4 menu-item">
+              <img src="assets/img/shop/vino5.png" class="menu-img img-fluid" alt="">
+              <h4 class="title">Vino Vilte</h4>
+              <p class="description1">Vino blanco joven</p>
+              <p class="price"><span>290</span>$</p>
+              <a href="#" class="btn-add-cart" data-id="23" onclick="addToCart('Vino Vilte', 290)">Agregar al
+                carrito</a>
+              <a href="checkout.html?nombre=Vino Vilte&precio=290" class="buy">Comprar</a>
+            </div>
+
+            <div class="col-lg-4 menu-item">
+              <img src="assets/img/shop/vino6.png" class="menu-img img-fluid" alt="">
+              <h4 class="title">Monasteria</h4>
+              <p class="description1">Vino tinto reserva especial</p>
+              <p class="price"><span>900</span>$</p>
+              <a href="" class="btn-add-cart" data-id="24" onclick="addToCart('Monasteria', 900)">Agregar al
+                carrito</a>
+              <a href="checkout.html?nombre=Monasteria&precio=900" class="buy">Comprar</a>
+            </div>
+          </div>
+        </div>
+  </section>
+
+  <!-- ultima categoria y Final de la tienda -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="row gy-3">
+        <div class="col-lg-3 col-md-6 d-flex">
+          <i class="bi bi-geo-alt icon"></i>
+          <div>
+            <h4>Address</h4>
+            <p>
+              Boca chica <br>
+              Santo domingo-RD<br>
+            </p>
+          </div>
+
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links d-flex">
+          <i class="bi bi-telephone icon"></i>
+          <div>
+            <h4>contactanos</h4>
+            <p>
+              <strong>Numero:</strong> +1 829-839-6898<br>
+              <strong>Email:</strong> silver03231@gmail.com<br>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Siguenos en las redes</h4>
+          <div class="social-links d-flex">
+            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>The Oasis</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Hecho Por <a href="#">Joel baez</a>
+      </div>
+    </div>
+
+  </footer>
+  <!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+
+
+  <!-- Librerias js -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main2.js"></script>
+</body>
+
+</html>

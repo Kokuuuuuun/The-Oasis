@@ -1,0 +1,124 @@
+
+.containera{
+    max-width: 1200px;
+    text-align: center;
+    margin: auto;
+}
+.header-section{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    position: relative;
+}
+.header-section div{
+    position: relative;
+}
+.header-section p{
+    position: absolute;
+    top: 22px;
+    right: 23px;
+    background-color: transparent;
+    padding: 1px 6px;
+    border-radius: 50%;
+    color: rgb(255, 0, 0);
+    font-weight: 700;
+    font-family: system-ui;
+    line-height: 18px;
+}
+.cart{
+    width: 39px;
+    height: 38px;
+    margin-right: 32px;
+}
+.cart-products{
+    position: absolute!important;
+    top: 82px;
+    right: -18px;
+    background-color: #fff;
+    padding: 0 18px;
+    box-shadow: 0 3px 10px rgba(243, 152, 152, 0.2);
+    border-radius: 10px;
+    min-width: 290px;
+    
+}
+
+
+/*end header*/
+.products{
+    padding-top: 17px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.products-refrescos{
+    padding-top: 17px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.products-jugos{
+    padding-top: 17px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.products-vinos{
+    padding-top: 17px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
+/*float cart*/
+.cart-products .item img{
+    width: 115px;
+}
+
+.cart-products .item{
+    display: flex;
+    align-items: center;
+    border-bottom: solid 2px rgb(0, 0, 0);
+}
+.cart-products .item .item-content{
+    margin: 0 19px;
+    width: 201px;
+}
+.cart-products .item .item-content h5{
+    margin: 0;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: system-ui;
+}
+.cart-products .item .item-content h6{
+    margin: 0;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: system-ui;
+}
+
+.cart-products .item span{
+    background-color: rgb(255, 255, 255);
+    padding: 0px 5px;
+    border-radius: 50%;
+    color: #000000;
+    font-family: system-ui;
+    cursor: pointer;
+}
+
+.cart-products .item .item-content h5.cart-price{
+    font-weight: 700;
+}
+
+/*stye to btn close*/
+p.close-btn{
+    top: 10px;
+    right: 6px;
+    cursor: pointer;
+    color: #000;
+}

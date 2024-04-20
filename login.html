@@ -1,0 +1,80 @@
+
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://accounts.google.com/gsi/client" async></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/perblue/1.0.0/notify.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--hacer que al logearse mande una notificacion que diga has iniciado sesion(lo mismo pra sign up)-->
+    <div class="sign-in-container">
+        <div class="sign-column s1">
+            <div class="sign-column-face s2">
+                <div class="s3">
+                    <div class="sign-header-section">
+                        <div class="sign-in-title">
+                            Sign in 
+                        </div>
+                        <div class="sign-in-title-alt">
+                            Inicia sesion con Google o facebook para poder acceder a una infinidad de productos.
+                        </div>
+                    </div>
+                    <div class="sign-buttons">
+                        <a href="#" class="login-w-button">
+                            <img width="18" height="18" src="https://img.icons8.com/color/48/google-logo.png" alt="google-logo" />
+                            <span>Sign in with Google</span>
+                        </a>
+                        <a href="#" class="login-w-button">
+                            <img width="18" height="18" src="https://img.icons8.com/color/48/facebook-new.png" alt="facebook-new"/>
+                            <span>Sign in with facebook</span>
+                        </a>
+                    </div>
+                    <div class="slice-container">
+                        <div class="slice-text-c">
+                            <div class="slicer"></div>
+                            <div class="slice-text">O usa tu correo</div>
+                        </div>
+                    </div>
+                    <form id="login-form" class="input-container" method="get" >
+                        <input type="email" id="email" placeholder="Email">
+                        <input type="password" id="password"  placeholder="password">
+                        <a href="#" class="alt-f">
+                            Forgot Password ?
+                        </a>
+                        <button type="submit">
+                               Sign in
+                        </button>
+                        <div href="#" class="alt-f-full">
+                            Not a Member yet ?
+                            <a href="sign-up.html" class="alt-f">
+                                Sign up
+                            </a>
+                        </div>
+                    
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="sign-column w2">
+            <div class="intro-p">
+                <div class="canvas-logo">
+                    <img src="assets/img/logov2.png" alt="logo">
+                </div>
+
+                <div class="intro-content">
+                    <div class="intro-title">
+                        The oasis Login
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="assets/js/login.js"></script>
+</html>
